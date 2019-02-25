@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" href="logo.png">
+        <title>Dadi Ilham Setiadi</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+        <style>
+            body { margin:50px;}
+            #content {border: 1px solid #eeeeee; padding: 30px; border-radius: 8px;}
+        </style>
+    </head>
+    <body>
+        <div class="columns is-centered is-vcentered">
+            <div id="content" class="column is-three-quarters">
+                <h1 class="title">Kalkulator | Exercise 2</h1>
+                <h2 class="subtitle">Using Javascript and Bulma CSS (Dadi Ilham Setiadi - JSDC Batch 4)</h2>
+                <hr />
+                <div class="field">
+                    <div class="control">
+                        <input class="input is-primary" type="number" placeholder="Angka Pertama" id="first" name="first">
+                    </div>
+                </div>
+                <!-- <div class="field">
+                    <div class="control">
+                        <div class="select is-primary">
+                        <select id="operator">
+                            <option value="tambah">Tambah (+)</option>
+                            <option value="kurang">Kurang (-)</option>
+                            <option value="bagi">Bagi (:)</option>
+                            <option value="kali">Kali (x)</option>
+                        </select>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="field">
+                    <span class="operators">
+                        <a class="button is-primary">+</a>
+                        <a class="button is-link">-</a>
+                        <a class="button is-info">x</a>
+                        <a class="button is-success">/</a>
+                        <a>
+                            <input class="input" type="text" id="ket_operator" placeholder="Operator Pilihan"  style="width: auto;" readonly>
+                        </a>
+                    </span>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <input class="input is-primary" type="number" placeholder="Angka Kedua" id="second" name="second" required>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="column is-three-quarters">
+                        <button class="button is-primary" style="width: 100%;" id="jumlah">Jumlah</button>
+                    </div>
+                    <div class="column">
+                        <button class="button is-danger" style="width: 100%;" id="ulang">Ulang</button>
+                    </div>
+                </div>
+                <hr />
+                <div class="field">
+                    <div class="control">
+                        <input class="input is-primary" type="number" id="result" name="result" placeholder="Hasil" readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
