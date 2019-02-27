@@ -11,6 +11,7 @@
         <style>
             body { margin:50px;}
             #content {border: 1px solid #eeeeee; padding: 30px; border-radius: 8px;}
+            #result { background-color: #eee; }
         </style>
     </head>
     <body>
@@ -21,22 +22,22 @@
                 <hr />
                 <div class="field">
                     <div class="control">
-                        <input class="input is-primary" type="number" placeholder="Angka Pertama" id="first" name="first">
+                        <input class="input is-primary" type="number" placeholder="Angka Pertama" id="first" name="first" autofocus>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <div class="select is-primary" style="width: 100%;">
+                            <select id="operator" style="width: 100%;">
+                                <option value="tambah">Tambah</option>
+                                <option value="kurang">Kurang</option>
+                                <option value="bagi">Bagi</option>
+                                <option value="kali">Kali</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
                 <!-- <div class="field">
-                    <div class="control">
-                        <div class="select is-primary">
-                        <select id="operator">
-                            <option value="tambah">Tambah (+)</option>
-                            <option value="kurang">Kurang (-)</option>
-                            <option value="bagi">Bagi (:)</option>
-                            <option value="kali">Kali (x)</option>
-                        </select>
-                        </div>
-                    </div>
-                </div> -->
-                <div class="field">
                     <span class="operators">
                         <a class="button is-primary">+</a>
                         <a class="button is-link">-</a>
@@ -46,18 +47,18 @@
                             <input class="input" type="text" id="ket_operator" placeholder="Operator Pilihan"  style="width: auto;" readonly>
                         </a>
                     </span>
-                </div>
+                </div> -->
                 <div class="field">
                     <div class="control">
-                        <input class="input is-primary" type="number" placeholder="Angka Kedua" id="second" name="second" required>
+                        <input class="input is-primary" type="number" placeholder="Angka Kedua" id="second" name="second">
                     </div>
                 </div>
                 <div class="columns">
                     <div class="column is-three-quarters">
-                        <button class="button is-primary" style="width: 100%;" id="jumlah">Jumlah</button>
+                        <button type="submit" class="button is-primary" style="width: 100%;" id="jumlah">Jumlah</button>
                     </div>
                     <div class="column">
-                        <button class="button is-danger" style="width: 100%;" id="ulang">Ulang</button>
+                        <button type="submit" class="button is-danger" style="width: 100%;" id="ulang">Ulang</button>
                     </div>
                 </div>
                 <hr />
